@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML Page</title>
+  <style>
+    /* A tiny bit of style to make it look nice */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(145deg, #f5f7fa 0%, #e9edf5 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      margin: 0;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      border-radius: 2rem;
+      box-shadow: 0 20px 35px -8px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+      max-width: 600px;
+      width: 100%;
+      padding: 2.8rem 2.5rem;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.01);
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #1e293b;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    h1 span {
+      background: #3b82f6;
+      color: white;
+      font-size: 1.8rem;
+      width: 3rem;
+      height: 3rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 8px 15px -5px #3b82f6;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #334155;
+      margin-bottom: 1.8rem;
+    }
+    .emoji-badge {
+      font-size: 1.4rem;
+      background: #f1f5f9;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      display: inline-block;
+      color: #0f172a;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      border: 1px solid #e2e8f0;
+    }
+    .footer-note {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-top: 1.8rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>
+      <span>✨</span>
+      Hello, World!
+    </h1>
+    <p>
+      This is a simple HTML page with a touch of CSS to make it look friendly.
+      It's completely self-contained — no external files needed.
+    </p>
+    <div class="emoji-badge">
+      ⚡ HTML · CSS · ready to edit ⚡
+    </div>
+    <div class="footer-note">
+      Edit this code to start building your own page.
+    </div>
+  </div>
+</body>
+</html>
